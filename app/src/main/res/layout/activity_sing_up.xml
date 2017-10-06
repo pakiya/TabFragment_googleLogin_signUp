@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    tools:context="com.maanondev.e2softdemo.SingUp">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_email_TIL"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_email"
+            android:hint="@string/reg_email"
+            android:inputType="textEmailAddress"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_password_TIL"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_password"
+            android:hint="@string/app_login_password"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_name_TIL"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_name"
+            android:hint="@string/reg_name"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_dob_TIL"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_dob"
+            android:hint="@string/reg_dob"
+            android:inputType="date"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_mob_TIL"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_mob"
+            android:hint="Mobile Number"
+            android:inputType="phone"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_btn"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/app_singup"/>
+
+    </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</RelativeLayout>
